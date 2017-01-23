@@ -1,8 +1,15 @@
 class UserController < ApplicationController
   def create
+    user = User.new name: params[:user][:name],
+                    points: params[:user][:points]
+
+    if user.save
+      redirect_to ranking_path
+    end
   end
 
   def new
+    @user = User.new
   end
 
   def edit
@@ -15,7 +22,7 @@ class UserController < ApplicationController
 									       points: params[:user][:points]
 
     if update
-      redirect_to '/'
+      redirect_to ranking_path
     end
   end
 end

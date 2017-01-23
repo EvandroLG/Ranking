@@ -1,4 +1,6 @@
 <h1>Ranking</h1>
+<%= link_to 'Create new user', user_new_path %>
+<br><br>
 <table>
   <thead>
     <tr>
@@ -13,7 +15,7 @@
         <td><%= user.name %></td>
         <td><%= user.points %></td>
         <td>
-          <%= link_to 'Edit', "/user/edit?id=#{user.id}" %>
+          <%= link_to 'Edit', user_edit_path(user.id) %>
         </td>
       </tr>
     <% end %>
