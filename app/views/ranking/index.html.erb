@@ -1,0 +1,21 @@
+<h1>Ranking</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Points</th>
+      <th>Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.points %></td>
+        <td>
+          <%= link_to 'Edit', "/user/edit?id=#{user.id}" %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
