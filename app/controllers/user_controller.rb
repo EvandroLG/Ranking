@@ -19,7 +19,7 @@ class UserController < ApplicationController
   def update
     user = User.find params[:user][:id]
     update = user.update name: params[:user][:name],
-									       points: params[:user][:points]
+                         points: params[:user][:points]
 
     if update
       redirect_to ranking_path
