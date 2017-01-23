@@ -1,9 +1,37 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  points: 1
+vando:
+  name: Vando
+  points: 3
 
-two:
-  name: MyString
-  points: 1
+roby:
+  name: Roby
+  points: 4
+
+rafa:
+  name: Rafa
+  points: 2
+
+cesar:
+  name: Cesar
+  points: 4
+
+maycon:
+  name: Maycon
+  points: 3
+
+jorge:
+  name: Jorgera
+  points: 0
+
+evandreira:
+  name: Evandreira
+  points: 0
+
+sergeira:
+  name: Sergeira
+  points: 0
+
+chapola:
+  name: Chapola
+  points: 0
