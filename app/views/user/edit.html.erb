@@ -1,2 +1,9 @@
-<h1>User#edit</h1>
-<p>Find me in app/views/user/edit.html.erb</p>
+<h1>Edit User</h1>
+<%= form_for @user, url: { action: 'update', method: :PATCH } do |f| %>
+  <%= f.hidden_field :id, value: @user.id %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :points %>
+  <%= f.number_field :points %>
+  <%= f.submit 'Update' %>
+<% end %>
